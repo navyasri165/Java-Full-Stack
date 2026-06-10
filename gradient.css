@@ -1,0 +1,13 @@
+*{
+    background-image:linear-gradient(to top,right,green,blue);
+}
+h1{ 
+    height:10cm;
+    background:linear-gradient(32deg,#06202B,#077A7D,#7AE2CF);
+}
+body{
+    display:flex; 
+    flex-direction:column;
+    justify-content:space-between;
+    align-items: center;
+}
