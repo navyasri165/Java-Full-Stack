@@ -1,0 +1,21 @@
+img{
+    height:350px;
+    width:300px;
+}
+body{
+    background-color:lightblue;
+}
+h1{
+     text-align :center;
+     color:burlywood; 
+}
+p{
+    color:rgb(118, 8, 118);
+    font-size:30px;
+    font-style:italic;
+    text-align:center;
+}
+
+
+
+ 

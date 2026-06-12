@@ -2,43 +2,281 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=  , initial-scale=1.0">
-    <title>navya</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navyasri Portfolio</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: #111827;
+            --text: #e2e8f0;
+            --accent: #38bdf8;
+            --accent-2: #60a5fa;
+            --muted: #94a3b8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: radial-gradient(circle at top, #1e293b 0%, #0f172a 55%);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: min(1100px, 95%);
+            margin: 0 auto;
+            padding: 2rem 0 4rem;
+        }
+
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .brand {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: var(--muted);
+            text-decoration: none;
+            transition: color 0.25s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .hero {
+            background: linear-gradient(180deg, rgba(15,23,42,0.95), rgba(15,23,42,0.9));
+            border: 1px solid rgba(148,163,184,0.18);
+            border-radius: 24px;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            box-shadow: 0 24px 80px rgba(15,23,42,0.35);
+        }
+
+        .hero-text h1 {
+            font-size: clamp(2.2rem, 3vw, 3.4rem);
+            margin-bottom: 0.75rem;
+        }
+
+        .hero-text p {
+            max-width: 700px;
+            color: var(--muted);
+        }
+
+        .hero-info {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .hero-info span {
+            background: rgba(56,189,248,0.12);
+            border: 1px solid rgba(56,189,248,0.2);
+            border-radius: 16px;
+            padding: 1rem 1.25rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--text);
+        }
+
+        .hero-info span strong {
+            color: var(--accent);
+        }
+
+        .section {
+            margin-top: 2.5rem;
+        }
+
+        .section h2 {
+            font-size: 1.7rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 24px;
+            padding: 1.75rem;
+            border: 1px solid rgba(148,163,184,0.14);
+            box-shadow: 0 18px 40px rgba(15,23,42,0.18);
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-pill {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.9rem 1rem;
+            background: rgba(96,165,250,0.12);
+            border-radius: 999px;
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        .contact-card {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .contact-card p {
+            color: var(--muted);
+        }
+
+        .contact-card a {
+            color: var(--accent);
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.95rem 1.4rem;
+            border-radius: 999px;
+            border: none;
+            background: var(--accent);
+            color: #0f172a;
+            cursor: pointer;
+            font-weight: 700;
+            transition: transform 0.2s ease, background 0.2s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            background: var(--accent-2);
+        }
+
+        .footer {
+            margin-top: 3rem;
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        @media (min-width: 768px) {
+            .hero {
+                grid-template-columns: 1.5fr 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>bio data</h1>
-    <h2>cse</h2>
-    <p> I am navya</p> persueing btech 3<sub>rd</sub> year in <big>mother theresa college</big><br>i am 3rd year</br></p>
-    <p>coding language:
-        <br>
-        <ul>
-       <li> html</li> <li>css</li> <li>javascript</li></p>
-       </ul>
-    <p>
-        <table>
-            <tr>
-                <th>5<sup>th </sup>sem</th>
-                <th>marks</th>
-                <th>grade</th>
-            </tr>
-            <tr> 
-                <td>dbms</td>
-                <td>85</td>
-                <td>a</td>
-           </tr>
-           <tr>
-            <td>os</td>
-            <td>90</td>
-            <td>s</td>
-           </tr>
-           <tr>
-            <td>se</td>
-            <td>95</td>
-            <td>a</td>
-           </tr>
-           
-        </table>
-       </p>
+    <div class="container">
+        <header>
+            <div class="brand">Navyasri</div>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
 
+        <section class="hero">
+            <div class="hero-text">
+                <p>Hello, I am</p>
+                <h1>Navyasri</h1>
+                <p>
+                    B.Tech CSE student at Mother Theresa Engineering College with a passion for building
+                    responsive web experiences using HTML, CSS, and JavaScript.
+                </p>
+            </div>
+            <div class="hero-info">
+                <span><strong>Degree:</strong> B.Tech CSE</span>
+                <span><strong>College:</strong> Mother Theresa Engineering College</span>
+                <span><strong>Mobile:</strong> 8977127293</span>
+                <span><strong>Email:</strong> cnavyareddynavya@gmail.com</span>
+                <button class="button" onclick="scrollToContact()">Get in Touch</button>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <div class="card">
+                <p>
+                    I am an enthusiastic computer science student focused on web development, user interface design,
+                    and learning the latest frontend techniques. I enjoy solving problems with clean, accessible code
+                    and building projects that look great on any device.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="card skills">
+                <div class="skill-pill">HTML</div>
+                <div class="skill-pill">CSS</div>
+                <div class="skill-pill">JavaScript</div>
+                <div class="skill-pill">Responsive Design</div>
+                <div class="skill-pill">Web Layout</div>
+                <div class="skill-pill">Problem Solving</div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <div class="card">
+                <h3>Mother Theresa Engineering College</h3>
+                <p class="muted">Bachelor of Technology in Computer Science and Engineering</p>
+                <p>
+                    Currently pursuing B.Tech CSE with a focus on frontend development and modern web technologies.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <div class="card contact-card">
+                <p>
+                    Reach out if you want to collaborate on a project, need help with web development, or want to learn more about my work.
+                </p>
+                <p><strong>Mobile:</strong> 8977127293</p>
+                <p><strong>Email:</strong> <a href="mailto:cnavyareddynavya@gmail.com">cnavyareddynavya@gmail.com</a></p>
+                <button class="button" onclick="openEmail()">Email Me</button>
+            </div>
+        </section>
+
+        <footer class="footer">
+            Designed and built by Navyasri • B.Tech CSE • Mother Theresa Engineering College
+        </footer>
+    </div>
+
+    <script>
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function openEmail() {
+            window.location.href = 'mailto:cnavyareddynavya@gmail.com';
+        }
+    </script>
 </body>
 </html>
