@@ -22,7 +22,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: radial-gradient(circle at top, #1e293b 0%, #0f172a 55%);
+            background: radial-gradient(circle at top, #eef2ff 0%, #f8fafc 60%);
             color: var(--text);
             line-height: 1.6;
         }
@@ -186,6 +186,21 @@
                 grid-template-columns: 1.5fr 1fr;
             }
         }
+          .hero-image {
+            width: 100%;
+            max-width: 360px;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+            margin: 0 auto;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body>
@@ -199,8 +214,11 @@
                 <a href="#contact">Contact</a>
             </nav>
         </header>
-
+               
         <section class="hero">
+             <div class="hero-image">
+                <img src="WhatsApp Image 2026-06-13 at 12.02.25 navya.jpeg" alt="Navyasri profile">
+            </div>
             <div class="hero-text">
                 <p>Hello, I am</p>
                 <h1>Navyasri</h1>
@@ -209,13 +227,25 @@
                     responsive web experiences using HTML, CSS, and JavaScript.
                 </p>
             </div>
-            <div class="hero-info">
+                        <div class="hero-info">
                 <span><strong>Degree:</strong> B.Tech CSE</span>
                 <span><strong>College:</strong> Mother Theresa Engineering College</span>
                 <span><strong>Mobile:</strong> 8977127293</span>
                 <span><strong>Email:</strong> cnavyareddynavya@gmail.com</span>
+                <span><strong>GitHub:</strong> <a href="https://github.com/navyasri165" target="_blank" rel="noreferrer">github.com/navyasri165</a></span>
                 <button class="button" onclick="scrollToContact()">Get in Touch</button>
+                                <span><strong>GitHub:</strong> <a href="https://github.com/navyasri165" target="_blank" rel="noreferrer">github.com/navyasri165</a></span>
+                <span><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/c-navyasri-47a2873bb" target="_blank" rel="noreferrer">linkedin.com/in/c-navyasri-47a2873bb</a></span>
+                <button class="button" onclick="scrollToContact()">Get in Touch</button>
+...
+                <p><strong>Email:</strong> <a href="mailto:cnavyareddynavya@gmail.com">cnavyareddynavya@gmail.com</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/c-navyasri-47a2873bb" target="_blank" rel="noreferrer">linkedin.com/in/c-navyasri-47a2873bb</a></p>
+                <button class="button" onclick="openEmail()">Email Me</button>
             </div>
+...
+                <p><strong>Email:</strong> <a href="mailto:cnavyareddynavya@gmail.com">cnavyareddynavya@gmail.com</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/navyasri165" target="_blank" rel="noreferrer">github.com/navyasri165</a></p>
+                <button class="button" onclick="openEmail()">Email Me</button>
         </section>
 
         <section id="about" class="section">
